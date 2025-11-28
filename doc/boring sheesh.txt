@@ -1,0 +1,13 @@
+#fake_h2 - is the div for the subtitle of the main page
+
+#fake_bar - my <br> cuz the normal one sucks
+
+#title_box - for the title box
+
+#resume_box - a box with...resume...yep
+
+#buttons_section - is the buttons section WOOAOAOAOAO
+
+.button_big_box - is the box where the button exists
+
+.fake_button - the FAKE button

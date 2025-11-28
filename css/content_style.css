@@ -1,0 +1,8 @@
+@font-face {
+	font-family: not_safe;
+	src: url('../fonts/phantommuff.ttf') format('truetype');
+}
+
+body {
+	font-family: not_safe;
+}
