@@ -133,7 +133,7 @@ h1:hover {
 	display: flex;
 	width: 30%;
 	height: 60%;
-	background-color: var(--bubColor);
+	background-color: var(--whiteLike);
 	justify-content: center;
 	align-items: center;
 	border: solid 3px var(--suppaRed);
@@ -161,6 +161,7 @@ h1:hover {
 	margin-left: 0%;
 	margin-right: 2%;
 	border: solid 3px var(--blackLike);
+	background-color: var(--bubColor);
 }
 
 .fake_button:active {

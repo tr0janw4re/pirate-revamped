@@ -1,3 +1,10 @@
+:root {
+	--blackLike: #00303B;
+	--suppaRed: #FF7777;
+	--bubColor: #FFCE96;
+	--whiteLike: #F1F2DA;
+}
+
 @font-face {
 	font-family: not_safe;
 	src: url('../fonts/phantommuff.ttf') format('truetype');
@@ -5,4 +12,62 @@
 
 body {
 	font-family: not_safe;
+	background-color: var(--whiteLike);
+}
+
+.boxes {
+	background-color: var(--bubColor);
+	box-shadow: 0px 4px 0px var(--blackLike);
+	border-radius: 8px;
+}
+
+#fake_bar {
+	height: 1vh;
+	background-color: var(--suppaRed);
+	margin: 3vh 1vw;
+	border-radius: 5px;
+	box-shadow: 0px 4px 0px var(--bubColor);
+}
+
+#title_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 20vh;
+	color: var(--blackLike);
+	text-shadow: 0px 2px 0px var(--suppaRed);
+}
+
+#title_box h1 {
+	transition: 0.8s;
+}
+
+#title_box h1:hover {
+	transform: scale(1.2) rotate(5deg);
+}
+
+#learning_time {
+	width: 85vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	transition: 0.8s;
+}
+
+/*add a cool effect for #learning_time:hover here pls*/
+
+#learning_time h3 {
+	text-align: center;
+	font-size: 120%;
+	width: 90%;
+	color: var(--blackLike);
+	text-shadow: 0px 2px 0px var(--suppaRed);
+	transition: 0.5s;
+}
+
+#learning_time h3:hover {
+	transform: scale(1.05);
 }
