@@ -1,8 +1,8 @@
 :root {
-	--blackLike: #00303B;
-	--suppaRed: #FF7777;
-	--bubColor: #FFCE96;
-	--whiteLike: #F1F2DA;
+	--blackLike: #332C50;
+	--suppaDark: #46878F;
+	--greeny: #94E344;
+	--whiteLike: #E2F3E4;
 }
 
 @font-face {
@@ -16,17 +16,17 @@ body {
 }
 
 .boxes {
-	background-color: var(--bubColor);
+	background-color: var(--greeny);
 	box-shadow: 0px 4px 0px var(--blackLike);
 	border-radius: 8px;
 }
 
 #fake_bar {
 	height: 1vh;
-	background-color: var(--suppaRed);
+	background-color: var(--suppaDark);
 	margin: 3vh 1vw;
 	border-radius: 5px;
-	box-shadow: 0px 4px 0px var(--bubColor);
+	box-shadow: 0px 4px 0px var(--greeny);
 }
 
 #title_box {
@@ -36,15 +36,17 @@ body {
 	flex-direction: column;
 	height: 20vh;
 	color: var(--blackLike);
-	text-shadow: 0px 2px 0px var(--suppaRed);
+	text-shadow: 0px 2px 0px var(--suppaDark);
 }
 
 #title_box h1 {
 	transition: 0.8s;
+	font-size: 40px;
 }
 
 #title_box h1:hover {
 	transform: scale(1.2) rotate(5deg);
+	text-shadow: 0px 0px 10px var(--suppaDark);
 }
 
 #learning_time {
@@ -64,10 +66,39 @@ body {
 	font-size: 120%;
 	width: 90%;
 	color: var(--blackLike);
-	text-shadow: 0px 2px 0px var(--suppaRed);
 	transition: 0.5s;
 }
 
 #learning_time h3:hover {
 	transform: scale(1.05);
+}
+
+#back_button {
+	text-decoration: none;
+	background-color: var(--greeny);
+	color: var(--whiteLike);
+	text-shadow: 0px 2px 0px var(--suppaDark);
+	font-size: 30px;
+	display: flex;
+	width: 20vw;
+	height: 8vh;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+	border: solid 3px var(--blackLike);
+	border-radius: 8px;
+	box-shadow: 0px 2px 0px var(--blackLike);
+	transition: 0.5s;
+}
+
+#back_button:hover {
+	transform: scale(1.1);
+}
+
+#back_button:active {
+	transform: translateY(2px) scaleX(1.3);
+	box-shadow: none;
+	background-color: var(--blackLike);
+	text-shadow: 0px 0px 8px var(--whiteLike);
+	opacity: 80%;
 }

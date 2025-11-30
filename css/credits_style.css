@@ -1,0 +1,86 @@
+:root {
+	--blackLike: #332C50;
+	--suppaDark: #46878F;
+	--greeny: #94E344;
+	--whiteLike: #E2F3E4;
+}
+
+@font-face {
+	font-family: not_safe;
+	src: url('../fonts/phantommuff.ttf') format('truetype');
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: not_safe;
+	background-color: var(--whiteLike);
+}
+
+#big_division {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#icons_part {
+	background-color: var(--suppaDark);
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#text_part {
+	background-color: var(--greeny);
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#text_part h2 {
+	font-size: 40px;
+	color: var(--whiteLike);
+	text-shadow: 0px 2px 0px var(--suppaDark);
+	height: 20%;
+}
+
+#text_part h3 {
+	font-size: 30px;
+	color: var(--whiteLike);
+	text-shadow: 0px 2px 0px var(--suppaDark);
+	height: 20%;
+	text-align: center;
+}
+
+#trojan_icon {
+	display: block;
+	width: 25%;
+	height: 25%;
+	position: relative;
+	animation: coolMove 3s forwards;
+}
+
+@keyframes coolMove {
+	0% {
+		top: 73%;
+		transform: rotate(10deg);
+	}
+	50% {
+		top: 25%;
+		transform: rotate(-10deg);
+	}
+	
+	100% {
+		top: 25%;
+		transform: rotate(-10deg);
+	}
+}

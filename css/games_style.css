@@ -1,0 +1,137 @@
+:root {
+	--blackLike: #332C50;
+	--suppaDark: #46878F;
+	--greeny: #94E344;
+	--whiteLike: #E2F3E4;
+}
+
+@font-face {
+	font-family: not_safe;
+	src: url('../fonts/phantommuff.ttf') format('truetype');
+}
+
+body {
+	font-family: not_safe;
+	background-color: var(--whiteLike);
+}
+
+.boxes {
+	background-color: var(--greeny);
+	box-shadow: 0px 4px 0px var(--blackLike);
+	border-radius: 8px;
+}
+
+#title_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 30vh;
+}
+
+#fake_h2 {
+	background-color: var(--whiteLike);
+	border: solid 3px var(--suppaDark);
+	display: block;
+	width: 60vw;
+	height: 4vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 0px var(--blackLike);
+	transition: 0.5s;
+	color: var(--blackLike);
+}
+
+#fake_h2:hover {
+	transform: translateY(-5px);
+	transition: 0.5s;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	transform: translateY(1vh);
+	transition: 0.8s;
+	color: var(--blackLike);
+}
+
+h1:hover {
+	transition: 0.8s;
+	transform: translateY(1vh) scale(1.1) rotate(3deg);
+	text-shadow: 0px 0px 10px var(--suppaDark);
+}
+
+#fake_bar {
+	height: 1vh;
+	background-color: var(--suppaDark);
+	margin: 3vh 1vw;
+	border-radius: 5px;
+	box-shadow: 0px 4px 0px var(--greeny);
+}
+
+.gameTab {
+	background-color: var(--blackLike);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+	min-height: 90vh;
+	flex-direction: column;
+}
+
+.gameTab h2 {
+	font-size: 35px;
+	color: var(--whiteLike);
+	margin-top: 0px;
+	transition: 0.8s;
+}
+
+.gameTab h2:hover {
+	transform: scale(1.05);
+}
+
+#gameWindow_1 {
+	transform: scale(1);
+	border-radius: 10px;
+	border: solid 3px var(--suppaDark);
+}
+
+#gameWindow_2 {
+	transform: scale(1);
+	border-radius: 10px;
+	border: solid 3px var(--suppaDark);
+}
+
+#back_button {
+	text-decoration: none;
+	background-color: var(--greeny);
+	color: var(--whiteLike);
+	text-shadow: 0px 2px 0px var(--suppaDark);
+	font-size: 30px;
+	display: flex;
+	width: 20vw;
+	height: 8vh;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+	border: solid 3px var(--blackLike);
+	border-radius: 8px;
+	box-shadow: 0px 2px 0px var(--blackLike);
+	transition: 0.5s;
+}
+
+#back_button:hover {
+	transform: scale(1.1);
+}
+
+#back_button:active {
+	transform: translateY(2px) scaleX(1.3);
+	box-shadow: none;
+	background-color: var(--blackLike);
+	text-shadow: 0px 0px 8px var(--whiteLike);
+	opacity: 80%;
+}

@@ -3,17 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Seguranca e Ética - Conteúdo</title>
-	<link rel="stylesheet" href="../css/content_style.css"/>
+	<title>Seguranca e Ética - Jogos</title>
+	<link rel="stylesheet" href="../css/games_style.css"/>
 </head>
-	<body>
-		<h1>Jogos!</h1>
-		<h2>Para conscientizar o aprendizado e me fazer perder sanidade!</h2>
-	
-		<canvas id="gameWindow_1">Seu Navegador fede e não suporta jogos</canvas>
-		<canvas id="gameWindow_2">Seu Navegador fede e não suporta jogos</canvas>
-	
-		<script src="../js/game_1.js"></script>
+	<body>		
+		<div id="title_box" class="boxes">
+			<h1>Jogos!</h1>
+			<div id="fake_h2">
+				<h2>Para conscientizar o aprendizado e me fazer <strong>perder sanidade!</strong></h2>
+			</div>
+		</div>
+		
+		<div id="fake_bar"></div>
+		
+		<div class="gameTab">
+			<h2>Jogo 1 - <strong>NÃO</strong> pirateie a Adobe</h2>
+			<canvas id="gameWindow_1">Seu Navegador fede e não suporta jogos</canvas>
+			<script type="module" src="../js/game_1.js"></script>
+		</div>
+		
+		<div id="fake_bar"></div>
+		
+		<div class="gameTab">
+			<h2>Jogo 2 - algo que envolva vírus</h2>
+			<canvas id="gameWindow_2">Seu Navegador fede e não suporta jogos</canvas>
+			<script type="module" src="../js/game_2.js"></script>
+		</div>
+		
+		<a href="../index.html" id="back_button">Voltar ao Menu</a>
 	
 	</body>
 </html>
